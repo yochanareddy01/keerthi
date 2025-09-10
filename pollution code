@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Types of Pollution</title>
+  <meta name="description" content="Overview of different types of pollution: air, water, soil, noise, light, thermal and radioactive — causes, effects and prevention."/>
+  <style>
+    :root{
+      --bg:#f6fbff;
+      --card:#ffffff;
+      --muted:#556;
+      --accent:#0b74de;
+      --radius:12px;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #eef6ff 0%, var(--bg) 100%);
+      color:var(--muted);
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      padding:28px;
+    }
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    header h1{
+      margin:0;
+      font-size:1.6rem;
+      color:#08324a;
+      letter-spacing:-0.5px;
+    }
+    header p{
+      margin:0;
+      color:#466379;
+      font-size:0.95rem;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap:16px;
+      margin-top:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:14px;
+      box-shadow: 0 6px 18px rgba(8,50,74,0.06);
+      border:1px solid rgba(8,50,74,0.04);
+    }
+
+    details{
+      margin-top:10px;
+    }
+    summary{
+      list-style:none;
+      cursor:pointer;
+      font-weight:600;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 10px;
+      border-radius:10px;
+    }
+    summary::-webkit-details-marker{display:none}
+    .emoji{
+      font-size:1.25rem;
+      width:34px;
+      text-align:center;
+      display:inline-block;
+    }
+    .meta{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:8px;
+      color:#375a6b;
+      font-size:0.92rem;
+    }
+    ul{margin:8px 0 0 18px;padding:0}
+    small{display:block;color:#7a93a3;margin-top:10px}
+    footer{
+      margin-top:22px;
+      color:#6a8b9b;
+      font-size:0.9rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:420px){
+      body{padding:16px}
+      header h1{font-size:1.25rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div>
+        <h1>Types of Pollution</h1>
+        <p>Short explanations, common causes, effects and prevention tips.</p>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="List of pollution types">
+      <!-- Air Pollution -->
+      <article class="card" aria-labelledby="air-title">
+        <h2 id="air-title">Air Pollution</h2>
+        <div class="meta">Common sources: vehicles · industries · burning fossil fuels</div>
+        <details>
+          <summary><span class="emoji">🌫</span> Overview</summary>
+          <p>Air pollution occurs when harmful gases, particulates and biological molecules are introduced into Earth's atmosphere.</p>
+          <ul>
+            <li><strong>Effects:</strong> respiratory diseases, smog, reduced visibility, climate impacts</li>
+            <li><strong>Prevention:</strong> cleaner fuels, EVs, emission controls, urban green spaces</li>
+          </ul>
+        </details>
+        <small>Key pollutants: PM2.5, PM10, NOx, SO₂, CO, O₃</small>
+      </article>
+
+      <!-- Water Pollution -->
+      <article class="card" aria-labelledby="water-title">
+        <h2 id="water-title">Water Pollution</h2>
+        <div class="meta">Common sources: sewage · industrial discharge · agricultural runoff</div>
+        <details>
+          <summary><span class="emoji">💧</span> Overview</summary>
+          <p>Contamination of rivers, lakes and oceans by harmful substances that reduce water quality and harm life.</p>
+          <ul>
+            <li><strong>Effects:</strong> ecosystem damage, health risks, bioaccumulation</li>
+            <li><strong>Prevention:</strong> wastewater treatment, reduce plastic use, sustainable farming</li>
+          </ul>
+        </details>
+        <small>Watch for: microplastics, heavy metals, nitrates, pathogens</small>
+      </article>
+
+      <!-- Soil Pollution -->
+      <article class="card" aria-labelledby="soil-title">
+        <h2 id="soil-title">Soil Pollution</h2>
+        <div class="meta">Common sources: pesticides · industrial waste · improper disposal</div>
+        <details>
+          <summary><span class="emoji">🌱</span> Overview</summary>
+          <p>Soil contamination with chemicals or waste that affect plant growth and enter the food chain.</p>
+          <ul>
+            <li><strong>Effects:</strong> lower fertility, toxic crops, groundwater contamination</li>
+            <li><strong>Prevention:</strong> organic farming, controlled waste disposal, remediation</li>
+          </ul>
+        </details>
+        <small>Common contaminants: pesticides, petroleum, heavy metals</small>
+      </article>
+
+      <!-- Noise Pollution -->
+      <article class="card" aria-labelledby="noise-title">
+        <h2 id="noise-title">Noise Pollution</h2>
+        <div class="meta">Common sources: traffic · construction · airports</div>
+        <details>
+          <summary><span class="emoji">🔊</span> Overview</summary>
+          <p>Excessive sound that harms human or animal life and reduces quality of life.</p>
+          <ul>
+            <li><strong>Effects:</strong> hearing loss, sleep disruption, stress</li>
+            <li><strong>Prevention:</strong> sound barriers, quieter machinery, zoning laws</li>
+          </ul>
+        </details>
+        <small>Measured in decibels (dB); prolonged high dB causes damage</small>
+      </article>
+
+      <!-- Light Pollution -->
+      <article class="card" aria-labelledby="light-title">
+        <h2 id="light-title">Light Pollution</h2>
+        <div class="meta">Common sources: streetlights · signage · bad outdoor lighting</div>
+        <details>
+          <summary><span class="emoji">🌃</span> Overview</summary>
+          <p>Excessive or misdirected artificial light that obscures the night sky and disturbs ecosystems.</p>
+          <ul>
+            <li><strong>Effects:</strong> disrupted wildlife cycles, wasted energy</li>
+            <li><strong>Prevention:</strong> shielded fixtures, timers, lower-intensity bulbs</li>
+          </ul>
+        </details>
+        <small>Astronomical visibility is a simple indicator of light pollution levels</small>
+      </article>
+
+      <!-- Thermal Pollution -->
+      <article class="card" aria-labelledby="thermal-title">
+        <h2 id="thermal-title">Thermal Pollution</h2>
+        <div class="meta">Common sources: power plants · industrial cooling</div>
+        <details>
+          <summary><span class="emoji">🔥</span> Overview</summary>
+          <p>Release of heated water or air that alters local temperature of ecosystems (often aquatic) and harms species.</p>
+          <ul>
+            <li><strong>Effects:</strong> reduced oxygen in water, species migration</li>
+            <li><strong>Prevention:</strong> cooling towers, heat recovery, stricter effluent rules</li>
+          </ul>
+        </details>
+        <small>Temperature rise of a few degrees can drastically affect aquatic life</small>
+      </article>
+
+      <!-- Radioactive Pollution -->
+      <article class="card" aria-labelledby="radioactive-title">
+        <h2 id="radioactive-title">Radioactive Pollution</h2>
+        <div class="meta">Common sources: nuclear accidents · improper waste handling</div>
+        <details>
+          <summary><span class="emoji">☢</span> Overview</summary>
+          <p>Release of radioactive substances into the environment; long-term contamination and health hazards.</p>
+          <ul>
+            <li><strong>Effects:</strong> cancer risk, environmental contamination, long half-lives</li>
+            <li><strong>Prevention:</strong> safe storage, strict regulation, emergency planning</li>
+          </ul>
+        </details>
+        <small>Radioactivity is measured in becquerels (Bq) or sieverts (Sv) for dose</small>
+      </article>
+    </section>
+
+    <footer>
+      <p>Want this as a printable handout or a version in another language (e.g., Telugu)? Tell me which format and I'll adapt it.</p>
+    </footer>
+  </div>
+</body>
+</html>
